@@ -133,4 +133,19 @@ button:focus-visible {
     color: var(--button-text-light);
     border-color: #ccc; /* Light button border */
   }
+
+  @keyframes glow {
+  0% { box-shadow: 0 0 10px #00ff7f44; }
+  50% { box-shadow: 0 0 25px #00ff7fAA; }
+  100% { box-shadow: 0 0 10px #00ff7f44; }
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 255, 127, 0.1);
+}
+.glow-btn {
+  animation: glow 3s infinite ease-in-out;
+}
 }
