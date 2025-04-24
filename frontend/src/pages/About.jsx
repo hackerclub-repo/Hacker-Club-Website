@@ -1,7 +1,15 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaShieldAlt,
+  FaRobot,
+  FaBrain,
+} from 'react-icons/fa';
+import { FiArrowRight, FiSend } from 'react-icons/fi';
 const About = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -267,52 +275,54 @@ const About = () => {
 </section>
 
 
-{/* Footer Section */}
-<footer data-aos="fade-up" className="bg-gray-900 text-white py-12">
-  <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-6 justify-items-center">
-    
-    <div data-aos="fade-up" data-aos-delay="100" className="space-y-6 text-center">
-      <h2 className="text-3xl font-extrabold text-[#00FF7F]">Let's Make Something Great Together</h2>
-      <form className="space-y-4 mt-6 flex justify-center items-center">
-        <input
-          type="email"
-          placeholder="Your Email Address"
-          className="w-full md:w-80 p-4 rounded-3xl text-black bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#00FF7F] transition"
-        />
-        <button
-          type="submit"
-          className="ml-4 bg-gradient-to-r from-[#00FF7F] to-[#00FFA2] text-black py-4 px-8 rounded-none font-semibold transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:shadow-[#00FF7F] focus:outline-none focus:ring-4 focus:ring-[#00FF7F] flex justify-center items-center"
-          style={{ transform: "translateY(-10px)" }}
-        >
-          <i className="fas fa-paper-plane text-white text-2xl"></i>
-        </button>
-      </form>
-    </div>
+{/* Call to Action */}
+      <section className="px-6 py-20 bg-black text-white" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="space-y-6">
+            <h2 className="text-4xl font-extrabold text-[#00FF7F]">Let's Build the Future Together</h2>
+            <p className="text-lg">
+              We’re here to help you create innovative solutions with AI and cutting-edge tech.
+            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <input
+                type="email"
+                placeholder="Your Email Address"
+                className="w-full sm:w-80 p-3 rounded-full border border-gray-600 bg-black text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00FF7F]"
+              />
+              <button className="bg-[#00FF7F] text-black py-3 px-6 rounded-full text-lg font-semibold hover:bg-white transition-all duration-300 flex items-center gap-2">
+                <FiSend className="text-xl" />
+                Send
+              </button>
+            </div>
+          </div>
 
-    <div data-aos="fade-up" data-aos-delay="200" className="space-y-6 text-center">
-      <h3 className="text-2xl font-bold text-[#00FF7F]">Useful Links</h3>
-      <ul className="space-y-4">
-        {["Home", "About", "Events", "Contact"].map((link, i) => (
-          <li key={i}>
-            <a
-              href={`#${link.toLowerCase()}`}
-              className="text-gray-400 hover:text-[#00FF7F] transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              {link}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold text-[#00FF7F]">Useful Links</h3>
+            <ul className="space-y-2 text-white text-base">
+              <li><a href="/" className="hover:text-[#00FF7F] transition">Home</a></li>
+              <li><a href="/about" className="hover:text-[#00FF7F] transition">About</a></li>
+              <li><a href="/pricing" className="hover:text-[#00FF7F] transition">Pricing</a></li>
+              <li><a href="/contact" className="hover:text-[#00FF7F] transition">Contact</a></li>
+            </ul>
+          </div>
 
-    <div data-aos="fade-up" data-aos-delay="300" className="space-y-6 text-center">
-      <h3 className="text-2xl font-bold text-[#00FF7F]">Contact Us</h3>
-      <p className="text-gray-400">Location: MCA Building, LNCT Campus</p>
-      <p className="text-gray-400">Mail: info@hackerclub.com</p>
-      <p className="text-gray-400">Phone: +91 7878787878</p>
-    </div>
-  </div>
-</footer>
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold text-[#00FF7F]">Contact</h3>
+            <div className="flex items-start gap-2">
+              <FaMapMarkerAlt className="text-xl mt-1" />
+              <p>MCA Building, LNCT Campus</p>
+            </div>
+            <div className="flex items-start gap-2">
+              <FaEnvelope className="text-xl mt-1" />
+              <p>info@hackerclub.com</p>
+            </div>
+            <div className="flex items-start gap-2">
+              <FaPhoneAlt className="text-xl mt-1" />
+              <p>+91 7878787878</p>
+            </div>
+          </div>
+        </div>
+      </section>
 </div>
   );
 };
