@@ -51,7 +51,6 @@ const Contact = () => {
           backgroundSize: '110%',
         }}
       >
-        {/* Circle Images (positions preserved) */}
         <div className="absolute top-20 left-45 w-20 h-20 rounded-full overflow-hidden shadow-lg animate-bounce" data-aos="fade-down">
           <img src="/src/assets/circle1.png" alt="Image 1" className="w-full h-full object-cover" />
         </div>
@@ -64,8 +63,6 @@ const Contact = () => {
         <div className="absolute bottom-30 right-110 w-20 h-20 rounded-full overflow-hidden shadow-lg animate-bounce" data-aos="fade-up">
           <img src="/src/assets/circle4.png" alt="Image 4" className="w-full h-full object-cover" />
         </div>
-
-        {/* Main Hero Content */}
         <div className="max-w-6xl mx-auto text-center px-6" data-aos="zoom-in">
           <h1 className="text-7xl font-extrabold mb-6 leading-tight tracking-tight text-shadow-xl">
             Reach Out to Us
@@ -85,7 +82,6 @@ const Contact = () => {
       {/* Contact Form */}
       <section id="contact-form" className="px-6 py-20 max-w-7xl mx-auto mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-          {/* Form */}
           <form
             onSubmit={handleSubmit}
             className="bg-white text-black p-10 rounded-3xl shadow-2xl border border-gray-200 space-y-6"
@@ -123,7 +119,7 @@ const Contact = () => {
             </button>
           </form>
 
-          {/* Info Section with icons */}
+          {/* Info Section */}
           <div className="text-white space-y-8 p-6 md:p-10 bg-black rounded-3xl shadow-2xl" data-aos="fade-left">
             <h2 className="text-3xl font-extrabold text-[#00FF7F]">Connect with Us</h2>
             <p className="text-lg leading-relaxed opacity-90">
@@ -152,7 +148,6 @@ const Contact = () => {
       {/* Future of Work */}
 <section className="px-6 py-36 bg-[#00FF7F] text-black" data-aos="zoom-in">
   <div className="max-w-6xl mx-auto text-center space-y-10">
-    {/* Enhanced Container */}
     <div className="bg-gray-900 p-16 rounded-3xl shadow-xl min-h-[400px] flex flex-col items-center justify-center space-y-8">
       <h2 className="text-4xl md:text-5xl font-extrabold leading-snug tracking-tight text-white">
         The Future of Work is Here, <br className="hidden md:block" />
@@ -182,9 +177,6 @@ const Contact = () => {
     </div>
   </div>
 </section>
-
-
-
 
       {/* Call to Action */}
       <section className="px-6 py-20 bg-black text-white" data-aos="fade-up">
