@@ -8,6 +8,8 @@ import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import Navbar from '../src/components/Navbar'
 import Footer from '../src/components/Footer'
+import DashBoard from '../src/admin/Dashboard'
+import EventManagement from './admin/ManageEvents';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/admin/Dashboard" element={<DashBoard />} />
+        <Route path="/admin/ManageEvents" element={<EventManagement />} />
         <Route path="/about" element={<About />} />
         <Route path="/events" element={<Events />} />
         <Route path="/register" element={<Register />} />
