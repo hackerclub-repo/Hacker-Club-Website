@@ -281,7 +281,7 @@ const About = () => {
           <div className="space-y-6">
             <h2 className="text-4xl font-extrabold text-[#00FF7F]">Let's Build the Future Together</h2>
             <p className="text-lg">
-              We’re here to help you create innovative solutions with AI and cutting-edge tech.
+            Join Hacker Club — where problem-solvers become changemakers.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <input

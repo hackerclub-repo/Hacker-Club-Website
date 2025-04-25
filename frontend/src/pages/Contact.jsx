@@ -149,13 +149,13 @@ const Contact = () => {
 <section className="px-6 py-36 bg-[#00FF7F] text-black" data-aos="zoom-in">
   <div className="max-w-6xl mx-auto text-center space-y-10">
     <div className="bg-gray-900 p-16 rounded-3xl shadow-xl min-h-[400px] flex flex-col items-center justify-center space-y-8">
-      <h2 className="text-4xl md:text-5xl font-extrabold leading-snug tracking-tight text-white">
-        The Future of Work is Here, <br className="hidden md:block" />
-        <span className="text-[#00FF7F]">Are You Ready to Embrace AI?</span>
+      <h2 className="text-4xl md:text-4xl font-extrabold leading-snug tracking-tight text-white">
+      Hacker Club:  <br className="hidden md:block" />
+        <span className="text-[#00FF7F]">Uniting Coders, Creators, and Rebels to Build the Future.</span>
       </h2>
       <p className="text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
-        Discover how artificial intelligence is reshaping industries and driving innovation.
-        Take the leap into the future and gain a competitive edge in a world fueled by smart technology.
+      Discover how the Hacker Club is empowering innovators to shape the future of tech.
+      Join the movement where code meets creativity and ideas turn into impact.
       </p>
       <button
         onClick={() => alert('Get Started Now')}
@@ -184,7 +184,7 @@ const Contact = () => {
           <div className="space-y-6">
             <h2 className="text-4xl font-extrabold text-[#00FF7F]">Let's Build the Future Together</h2>
             <p className="text-lg">
-              We’re here to help you create innovative solutions with AI and cutting-edge tech.
+            Join Hacker Club — where problem-solvers become changemakers.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <input
