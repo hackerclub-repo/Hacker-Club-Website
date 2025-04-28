@@ -17,7 +17,6 @@
   }
 }
 
-/* Apply animation to classes */
 .animate__animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -29,38 +28,34 @@
 
 .animate__slideInFromLeft {
   animation-name: slideInFromLeft;
-  animation-duration: 1s;
-  animation-fill-mode: both;
 }
 
-/* Combine both animations (fade and slide) */
-.animate_fadeIn.animate_slideInFromLeft {
+.animate__fadeIn.animate__slideInFromLeft {
   animation-name: fadeIn, slideInFromLeft;
   animation-duration: 1s, 1s;
   animation-timing-function: ease-out, ease-out;
-  animation-delay: 0s, 0s; /* Adjust delay for both if needed */
+  animation-fill-mode: both;
 }
 
-.animate_fadeIn.animate_delay-1s {
-  animation-delay: 0.5s;
+.animate__delay-1s {
+  animation-delay: 1s;
 }
-
-.animate_fadeIn.animate_delay-2s {
+.animate__delay-2s {
   animation-delay: 2s;
 }
-
-.animate_fadeIn.animate_delay-3s {
+.animate__delay-3s {
   animation-delay: 3s;
 }
-
-.animate_fadeIn.animate_delay-4s {
+.animate__delay-4s {
   animation-delay: 4s;
 }
 
-/* Smooth scrolling behavior */
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
+
+
 :root {
   /* Global font settings */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
