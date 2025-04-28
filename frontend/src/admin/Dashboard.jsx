@@ -1,7 +1,8 @@
 import React from 'react';
 import { FiHome, FiCalendar } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
-import hackerBg from '../assets/hackerclub.jpg';
+import hackerBg from '../assets/hackerclub.jpg'; // Ensure image exists
+
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ const Dashboard = () => {
     <div className="min-h-screen bg-white text-black flex font-sans">
       {/* Sidebar */}
       <div className="w-64 bg-black border-r border-gray-700 text-white p-6 space-y-6 shadow-xl">
-        <h2 className="text-2xl font-extrabold mb-8 text-white hover:text-green-400 transition duration-300">
+        <h2 className="text-2xl font-extrabold mb-8 hover:text-green-400 transition duration-300">
           🕶 Admin Panel
         </h2>
         <div className="space-y-4">
@@ -31,10 +32,10 @@ const Dashboard = () => {
       {/* Main Content */}
       <div
         className="flex-1 p-8 space-y-12 text-white overflow-y-auto bg-cover bg-center bg-no-repeat bg-black/70 bg-blend-overlay"
-        style={{ backgroundImage: url(${hackerBg}) }}
+        style={{ backgroundImage: `url(${hackerBg})` }}
       >
         {/* Top Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate_animated animatefadeIn animateslideInFromLeft animate_delay-1s">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate__animated animate__fadeIn animate__slideInFromLeft animate__delay-1s">
           {[{ label: 'Total Registered Users', value: 10 },
             { label: 'Total Events', value: 15 },
             { label: 'Active Events This Month', value: 3 }].map((stat, i) => (
@@ -49,7 +50,7 @@ const Dashboard = () => {
         </div>
 
         {/* Middle Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate_animated animatefadeIn animateslideInFromLeft animate_delay-2s">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate__animated animate__fadeIn animate__slideInFromLeft animate__delay-2s">
           <div className="bg-black border border-gray-700 rounded-xl p-5 hover:border-green-500 transition duration-300">
             <p className="text-sm text-gray-400 mb-3">Recent Activity Feed</p>
             <div className="space-y-2">
@@ -64,7 +65,7 @@ const Dashboard = () => {
         </div>
 
         {/* Manage Events & Users */}
-        <div className="grid md:grid-cols-3 gap-6 animate_animated animatefadeIn animateslideInFromLeft animate_delay-3s">
+        <div className="grid md:grid-cols-3 gap-6 animate__animated animate__fadeIn animate__slideInFromLeft animate__delay-3s">
           {/* Manage Events */}
           <div className="bg-black border border-gray-700 rounded-xl p-5 hover:border-green-500 transition duration-300">
             <p className="text-lg font-bold mb-4 text-white">Manage Events</p>
@@ -128,8 +129,8 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Bonus Section to Enable Scrolling */}
-        <div className="text-sm text-gray-300 border-t border-gray-700 pt-4 animate_animated animatefadeIn animateslideInFromLeft animate_delay-4s">
+        {/* Bonus Features */}
+        <div className="text-sm text-gray-300 border-t border-gray-700 pt-4 animate__animated animate__fadeIn animate__slideInFromLeft animate__delay-4s">
           <p className="font-semibold mb-2 text-white">Bonus Admin Features</p>
           <ul className="grid grid-cols-2 md:grid-cols-3 list-disc list-inside gap-y-2">
             <li className="hover:text-green-400 transition">Homepage Highlight Toggle</li>
