@@ -1,5 +1,66 @@
 @import "tailwindcss"; /* Importing Tailwind CSS */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply animation to classes */
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__slideInFromLeft {
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Combine both animations (fade and slide) */
+.animate_fadeIn.animate_slideInFromLeft {
+  animation-name: fadeIn, slideInFromLeft;
+  animation-duration: 1s, 1s;
+  animation-timing-function: ease-out, ease-out;
+  animation-delay: 0s, 0s; /* Adjust delay for both if needed */
+}
+
+.animate_fadeIn.animate_delay-1s {
+  animation-delay: 0.5s;
+}
+
+.animate_fadeIn.animate_delay-2s {
+  animation-delay: 2s;
+}
+
+.animate_fadeIn.animate_delay-3s {
+  animation-delay: 3s;
+}
+
+.animate_fadeIn.animate_delay-4s {
+  animation-delay: 4s;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
 :root {
   /* Global font settings */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
